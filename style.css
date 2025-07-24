@@ -1,0 +1,85 @@
+/* Reset básico para que todo luzca igual en todos los navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Estilo del formulario */
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  border: none;
+  background-color: #b39fea;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #5f4b8b;
+}
+
+/* Lista de tareas */
+ul {
+  list-style: none;
+}
+
+/* Cada tarea (li) */
+.tarea {
+  background-color: #fff;
+  padding: 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 5px solid #b39fea;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Texto tachado para tareas completadas */
+.completada span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Botones de tarea */
+.tarea button {
+  margin-left: 0.5rem;
+  background-color: #ccc;
+  color: black;
+  border-radius: 4px;
+}
+
+.tarea button:hover {
+  background-color: #bbb;
+}
